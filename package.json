@@ -1,0 +1,37 @@
+{
+  "name": "send-webmentions",
+  "version": "0.0.1",
+  "description": "When prompted, I read a sitemap and check links for links to send webmentions to.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "body-parser": "^1.18.3",
+    "node-fetch": "^2.2.0",
+    "cheerio": "1.0.0-rc.2",
+    "get-webmention-url": "^2.0.0",
+    "send-webmention": "^2.0.0",
+    "sqlite": "^2.9.2",
+    "uuid": "^3.3.2"
+  },
+  "engines": {
+    "node": "10.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/welcome-project"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ],
+  "baseUrl": "https://qubyte.codes",
+  "denyList": [
+    "^https://twitter.com",
+    "^https://paypal.me/qubyte$"
+  ],
+  "postPattern": "/blog/"
+}
