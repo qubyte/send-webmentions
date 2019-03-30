@@ -13,7 +13,7 @@
     "cheerio": "1.0.0-rc.2",
     "get-webmention-url": "^2.0.0",
     "send-webmention": "^2.0.0",
-    "sqlite": "^2.9.2",
+    "sqlite": "^3.0.3",
     "uuid": "^3.3.2"
   },
   "engines": {
