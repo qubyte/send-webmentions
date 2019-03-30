@@ -1,5 +1,7 @@
 # send-webmentions
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/qubyte/send-webmentions.svg)](https://greenkeeper.io/)
+
 This server exposes a webhook notification. When called, it will scan the configured site for new links to third-party sites, check if those sites are receptive to webmentions, and for ones that are dispatches mentions to them. Mentions which have been sent are kept in a local database so that mentions aren't sent more than once.
 
 To use this yourself, remix this glitch and update these fields in package.json:
