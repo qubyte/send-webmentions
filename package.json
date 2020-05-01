@@ -4,7 +4,9 @@
   "description": "When prompted, I read a sitemap and check links for links to send webmentions to.",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "express": "^4.16.3",
@@ -14,7 +16,8 @@
     "get-webmention-url": "^2.0.0",
     "send-webmention": "^2.0.0",
     "sqlite": "^2.9.2",
-    "uuid": "^3.3.2"
+    "uuid": "^3.3.2",
+    "snyk": "^1.316.1"
   },
   "engines": {
     "node": "10.x"
@@ -33,5 +36,6 @@
     "^https://twitter.com",
     "^https://paypal.me/qubyte$"
   ],
-  "postPattern": "/blog/"
+  "postPattern": "/blog/",
+  "snyk": true
 }
